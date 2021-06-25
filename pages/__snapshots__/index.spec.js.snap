@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render correctly text component 1`] = `
+<div>
+  <div
+    className="container"
+  >
+    testing react app
+  </div>
+  <br />
+  <form>
+    <label
+      for="name"
+    >
+      First Name
+    </label>
+    <input
+      autoComplete="name"
+      id="firstname"
+      required={true}
+      type="text"
+      value="dakshina"
+    />
+    <br />
+    <br />
+    <label
+      for="name"
+    >
+      Last Name
+    </label>
+    <input
+      autoComplete="name"
+      id="lastname"
+      required={true}
+      type="text"
+      value="jayakumar"
+    />
+    <br />
+    <br />
+    <label
+      htmlFor="fileUpload"
+    >
+      Upload file:
+    </label>
+    <input
+      id="fileUpload"
+      name="image"
+      onChange={[Function]}
+      type="file"
+    />
+  </form>
+  <br />
+  <div
+    className="count"
+  >
+    0
+  </div>
+  <button
+    className="add"
+    disabled={false}
+    onClick={[Function]}
+  >
+    ADD
+  </button>
+  <button
+    className="sub"
+    disabled={true}
+    onClick={[Function]}
+  >
+    SUBTRACT
+  </button>
+</div>
+`;
