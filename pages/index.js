@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
-import  '../styles/Home.css'
+// import  '../styles/Home.css';
+// import '../styles/globals.css'
 
 export default function Home(props) {
   let [count, setCount] = useState(0);
@@ -8,10 +9,8 @@ export default function Home(props) {
   let [image, setImage] = useState(null);
 
   function handleAddOnclick(){
-    // console.log(props.handleAddOnclick)
       console.log("adding....");
       setCount(count+1);
-      props.handleAddOnClick();
   }
   
   function handleSubOnclick(){
@@ -26,8 +25,8 @@ export default function Home(props) {
   }
 
   return (
-    <div>
-      <div className="container">testing react app</div>
+    <div className="container">
+      <div>testing react app</div>
       <br/>
       <form >
         <label for="name">First Name</label>
