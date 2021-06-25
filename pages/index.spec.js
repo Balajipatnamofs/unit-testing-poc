@@ -4,28 +4,38 @@ import renderer from 'react-test-renderer';
 import { mount, shallow } from 'enzyme';
 import Home from './index';
 
-// describe('Home Component', () => {
-//   it('should render a text', () => {
-//     const wrapper = shallow(<Home/>);
-//     expect(wrapper.find('.text').text()).toBe('testing react app')
-//   })
-// })
+/**
+ * div element having classname = text, should render a text.
+ */
+describe('Home Component', () => {
+  it('should render a text', () => {
+    const wrapper = shallow(<Home/>);
+    expect(wrapper.find('.text').text()).toBe('testing react app')
+  })
+})
 
-// describe('Home Component', () => {
-//   it('should render count', () => {
-//     const wrapper = shallow(<Home/>);
-//     expect(wrapper.find('.count').text()).toBe('0');
-//   })
-// })
+/**
+ * to check if the count is 0 initially
+ */
+describe('Home Component', () => {
+  it('should render count', () => {
+    const wrapper = shallow(<Home/>);
+    expect(wrapper.find('.count').text()).toBe('0');
+  })
+})
 
-// describe('Button onClick', () => {
-//   it('should render 1', () => {
-//     const wrapper = shallow(<Home/>);
-//     const button = wrapper.find('.add');
-//     button.simulate('click')
-//     expect(wrapper.find('.count').text()).toBe('1');
-//   })
-// })
+/**
+ * initially being 0 as count value, on
+ * add button simulation the count value becomes 1 
+ */
+describe('Button onClick', () => {
+  it('should render 1', () => {
+    const wrapper = shallow(<Home/>);
+    const button = wrapper.find('.add');
+    button.simulate('click')
+    expect(wrapper.find('.count').text()).toBe('1');
+  })
+})
 
 // describe('Button onClick', () => {
 //   it('should render 1', () => {

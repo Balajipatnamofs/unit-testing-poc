@@ -26,7 +26,7 @@ export default function Home(props) {
 
   return (
     <div className="container">
-      <div>testing react app</div>
+      <div className="text">testing react app</div>
       <br/>
       <form >
         <label for="name">First Name</label>
